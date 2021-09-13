@@ -62,19 +62,19 @@ Like the first challenge, there are example test cases but these are not mandato
 
 ## Part 2
 
-In the folder `part_two` you will find a very basic pre-built express server. Please run `npm i` and `npm run dev` to start the server. If you examine the code, you will see that we are using an in-memory Mongo instance as our database. Traditionally this is used for testing but for the sake of this challenge, it removes the need for deployment or concern about persistence of data. 
+In the folder `part_two` you will find a very basic pre-built express server. Please run `npm i` and `npm run dev` to start the server. If you examine the code, you will see that we are using an in-memory Mongo instance as our database. Traditionally this is used for testing but for the sake of this challenge, it removes the need for deployment or concern about persistence of data.
 
 ### Setup
 
 - Once you have the dependencies installed and the server running, hit the endpoint `http://localhost:5002/test` and ensure you are returning a 200 status and 'Hello world'.
 - Examine the file structure - there is an extremely simplified database and API instance already set up. There is a user model and two endpoints that allow you to post a new user and retrieve all users in the database.
-- *The users collection and endpoints are purely for demonstrative purposes and play no role in the challenge.*
+- _The users collection and endpoints are purely for demonstrative purposes and play no role in the challenge._
 - Please hit both the endpoints and ensure you can post and retrieve users before attempting the challenge
 - **Note** - Remember the database is an **in-memory instance**. If you make a change to the code and restart the server, all existing data will be lost so don't panic.
 
 ### Challenge
 
-The brief is as follows: Similar to Google Forms or SurveyMonkey, we would like the ability for a user to create a form that takes *n* questions that take either a string, number or boolean value as an answer. This survey could then be retrieved and the relevant answers supplied and recorded by any number of respondants. 
+The brief is as follows: Similar to Google Forms or SurveyMonkey, we would like the ability for a user to create a form that takes _n_ questions that take either a string, number or boolean value as an answer. This survey could then be retrieved and the relevant answers supplied and recorded by any number of respondants.
 
 Your challenge is to design the database schema, endpoints and any associated logic.
 
@@ -91,5 +91,4 @@ Including testing is not expected due to the added complexity and time. However,
 
 ### Submission
 
-Please fork the repository, create a new branch and make a pull request with `ruairidhflint` as a reviewer. Once this has been done, please email me at `rory.flint@cpandr.co.uk` with a link to the pull request. 
-
+Please fork the repository, create a new branch and make a pull request against _your own_ main branch - not the original repositories. Once this has been done, please email me at `rory.flint@cpandr.co.uk` with a link to the pull request.
