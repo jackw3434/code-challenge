@@ -1,5 +1,12 @@
 const fillArray = (rawData, currentWeek) => {
-  // your code here
+  rawData.sort((a, b) => a.week - b.week);    
+  for (let index = 0; index < currentWeek; index++) {
+    if(rawData.every(e => e.week != index + 1) ){
+      rawData.splice(index, 0, { week: index, hours: 0 })
+    }  
+    rawData[index] = rawData[index].hours
+  }
+  return rawData;
 };
 
 // Example simple test case
